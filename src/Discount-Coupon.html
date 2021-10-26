@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file  --------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./Style.css">
+
+    <!--bootstrap min.css file  -------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+
+    <!-- bootstrap min.js file -------------------------------------------------------------------------------->
+    <script src="./../bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- jquery file  ----------------------------------------------------------------------------------------->
+    <script src="./../bootstrap-5.1.1-dist/jquery-3.6.0.min.js"></script>
+
+    <!-- font awesome cdn  ------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./../bootstrap-5.1.1-dist/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>E-commerce/Discuont-Coupon</title>
+    <style>
+        /*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+        .pricing {
+            margin-bottom: 5%;
+        }
+
+        .pricing .box {
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing h3 {
+            font-weight: 400;
+            margin: -20px -20px 20px -20px;
+            padding: 20px 15px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #777777;
+            background: #f8f8f8;
+        }
+
+        .pricing h4 {
+            font-size: 36px;
+            color: #1acc8d;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .pricing h4 sup {
+            font-size: 20px;
+            top: -15px;
+            left: -3px;
+        }
+
+        .pricing h4 span {
+            color: #bababa;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .pricing ul {
+            padding: 0;
+            list-style: none;
+            color: #444444;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+        .pricing ul li {
+            padding-bottom: 16px;
+        }
+
+        .pricing ul i {
+            color: #1acc8d;
+            font-size: 18px;
+            padding-right: 4px;
+        }
+
+        .pricing ul .na {
+            color: #ccc;
+            text-decoration: line-through;
+        }
+
+        .pricing .btn-wrap {
+            margin: 20px -20px -20px -20px;
+            padding: 20px 15px;
+            background: #f8f8f8;
+            text-align: center;
+        }
+
+        .pricing .btn-buy {
+            background: #1acc8d;
+            display: inline-block;
+            padding: 8px 35px 10px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            color: #fff;
+            transition: none;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .pricing .btn-buy:hover {
+            background: orange;
+        }
+
+        .pricing .featured h3 {
+            color: #fff;
+            background: #abcc1a;
+        }
+
+        .pricing .advanced {
+            width: 200px;
+            position: absolute;
+            top: 18px;
+            right: -68px;
+            transform: rotate(45deg);
+            z-index: 1;
+            font-size: 14px;
+            padding: 1px 0 3px 0;
+            background: #fff;
+            color: hotpink;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- top nvbar ---------------------------------------------------------------------------------------------->
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <a href="./../index.html"><img src="./image/portland.png" alt="" class="logo"></a>
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fas fa-search"></i></span>
+        </div>
+
+        <div class="menu-bar">
+            <ul>
+                <li>
+                    <a href="./Cart.html"><i class="fas fa-shopping-basket nav-logo"></i>Cart</a>
+                </li>
+                <li>
+                    <a href="./signup.html"><i class="fas fa-user-plus nav-logo"></i>SignUp</a>
+                </li>
+                <li>
+                    <a href="./login.html"><i class="fas fa-sign-in-alt nav-logo"></i>Log In</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- end top navbar --------------------------------------------------------------------------------------------------->
+
+    <!-- ======= Pricing Section ======================================================================================= -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Discount Coupon</h2>
+                <p>Check</p>
+            </div>
+
+            <div class="row" data-aos="fade-left">
+
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                    <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
+                        <h3>UPTO 5% Discount</h3>
+                        <h4><sup>$</sup>0<span> / Year</span></h4>
+                        <ul>
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li class="na">Massa ultricies mi</li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn-buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                    <div class="box featured" data-aos="zoom-in" data-aos-delay="200">
+                        <h3>UPTO 10% Discount</h3>
+                        <h4><sup>$</sup>0<span> / Year</span></h4>
+                        <ul>
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li class="na">Massa ultricies mi</li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn-buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <div class="box featured" data-aos="zoom-in" data-aos-delay="300">
+                        <h3>UPTO 30% Discount</h3>
+                        <h4><sup>$</sup>1<span> / year</span></h4>
+                        <ul>
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn-buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <div class="box featured" data-aos="zoom-in" data-aos-delay="400">
+                        <span class="advanced">PRO</span>
+                        <h3>UPTO 50% Discount</h3>
+                        <h4><sup>$</sup>5<span> / year</span></h4>
+                        <ul>
+                            <li>Aida dere</li>
+                            <li>Nec feugiat nisl</li>
+                            <li>Nulla at volutpat dola</li>
+                            <li>Pharetra massa</li>
+                            <li>Massa ultricies mi</li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn-buy">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Pricing Section -------------------------------------------------------------------------->
+    <!-- footer  section ------------------------------------------------------------------------------>
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+
+    <!-- footer col-1  section ------------------------------------------------------------------------------>
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>
+                        <i class="fab fa-old-republic footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Privacy-Policy.html"> Privacy Policy</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-viruses footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Terms-use.html"> Terms of Use</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-exchange-alt footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Return-policy.html"> Return Policy</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-tags footer-logo"></i>
+                        <a href="#"> Discount Coupon</a>
+                    </p>
+                </div>
+
+    <!-- footer col-2  section ------------------------------------------------------------------------------>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+
+                    <p>
+                        <i class="fab fa-accusoft footer-logo"></i>
+                        &nbsp;&nbsp;
+                        <a href="./About.html"> About Us</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-address-book footer-logo"></i>
+                        <a href="./Contact.html"> Contact Us</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-hand-holding-heart footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Carrer.html"> Product</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-affiliatetheme footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="./Affiliate.html"> Affiliate</a>
+                    </p>
+                </div>
+
+    <!-- footer col-3  section ------------------------------------------------------------------------------>
+                <div class="col-md-3">
+                    <h1>Follow Us</h1>
+
+                    <p>
+                        <i class="fab fa-youtube footer-logo"></i>
+                        <a href="https://www.youtube.com/">You Tube</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-facebook footer-logo"></i>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-linkedin footer-logo"></i>
+                        &nbsp;
+                        <a href="https://www.linkedin.com/feed/"> LinkedIn</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-twitter-square footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://twitter.com/?lang=en">Twitter</a>
+                    </p>
+                </div>
+
+    <!-- footer col-4  section --------------------------------------------------------------------------->
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <img src="./../image/footer-image.png" alt="">
+                </div>
+
+            </div>
+            <hr>
+            <h1 class="copyright"> <i class="fas fa-at"></i> &nbsp; Devloper | All Right Reserved</h1>
+        </div>
+    </section>
+    <!-- end footer  section -------------------------------------------------------------------------->
+
+</body>
+
+</html>

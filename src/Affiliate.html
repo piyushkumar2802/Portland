@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file  --------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./Style.css">
+
+    <!--bootstrap min.css file  -------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link href="./framwork/bootstrap-icon/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- bootstrap min.js file -------------------------------------------------------------------------------->
+    <script src="./../bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- jquery file  ----------------------------------------------------------------------------------------->
+    <script src="./../bootstrap-5.1.1-dist/jquery-3.6.0.min.js"></script>
+
+    <!-- font awesome cdn  ------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="./../bootstrap-5.1.1-dist/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>E-commerce/Afffiliate</title>
+
+     <!-- Vendor CSS Files -->
+  <!-- <link href="./framwork/aos/aos.css" rel="stylesheet"> -->
+  <link href="./framwork/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="./framwork/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./framwork/remixicon/remixicon.css" rel="stylesheet">
+  <link href="./framwork/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <style>
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials {
+  padding: 80px 0;
+  background: url("./image/testimonial-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 2%;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(1, 3, 111, 0.8);
+}
+
+.testimonials .section-header {
+  margin-bottom: 40px;
+}
+
+.testimonials .testimonial-item {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #1acc8d;
+}
+
+@media (min-width: 1024px) {
+  .testimonials {
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  background: #fff;
+  margin-bottom: 5%;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.team .member .pic {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.team .member img {
+  transition: all ease-in-out 0.4s;
+}
+
+.team .member:hover img {
+  transform: scale(1.1);
+}
+
+.team .member .member-info {
+  position: absolute;
+  bottom: -80px;
+  left: 0px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #01036f;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.team .member h4::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #0d12fc;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #01036f;
+}
+
+.team .member .social {
+  margin-top: 10px;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #01036f;
+}
+
+.team .member .social a:hover {
+  color: #1acc8d;
+}
+
+.team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+    </style>
+
+</head>
+<body>
+        <!-- top nvbar ---------------------------------------------------------------------------------------------->
+        <div class="top-nav-bar">
+            <div class="search-box">
+                <a href="./../index.html"><img src="image/portland.png" alt="" class="logo"></a>
+                <input type="text" class="form-control">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+    
+            <div class="menu-bar">
+                <ul>
+                    <li>
+                        <a href="./Cart.html"><i class="fas fa-shopping-basket nav-logo"></i>Cart</a>
+                    </li>
+                    <li>
+                        <a href="./signup.html"><i class="fas fa-user-plus nav-logo"></i>SignUp</a>
+                    </li>
+                    <li>
+                        <a href="./login.html"><i class="fas fa-sign-in-alt nav-logo"></i>Log In</a>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+        <!-- end top navbar --------------------------------------------------------------------------------------------------->
+    <!-- ======= Testimonials Section ============================================================================ -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+  
+          <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="./image/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="./image/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="./image/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="./image/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="./image/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section><!-- End Testimonials Section -->       
+    
+    <!-- ======= Team Section =============================================================================== -->
+    <section id="team" class="team">
+        <div class="container">
+  
+          <div class="section-title" data-aos="fade-up">
+            <h2>Team</h2>
+            <p>Our Great Team</p>
+          </div>
+  
+          <div class="row" data-aos="fade-left">
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                <div class="pic"><img src="./image/team-1.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+              <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                <div class="pic"><img src="./image/team-2.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                <div class="pic"><img src="./image/team-3.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+              <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                <div class="pic"><img src="./image/team-4.jpg" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+      <!-- End Team Section --------------------------------------------------------------------------->  
+
+    <!-- footer  section ------------------------------------------------------------------------------>
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+
+                <!-- footer col-1  section ------------------------------------------------------------------------------>
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>
+                        <i class="fab fa-old-republic footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Privacy-Policy.html"> Privacy Policy</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-viruses footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Terms-use.html"> Terms of Use</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-exchange-alt footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Return-policy.html"> Return Policy</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-tags footer-logo"></i>
+                        <a href="./Discount-Coupon.html"> Discount Coupon</a>
+                    </p>
+                </div>
+                <!-- footer col-2  section ------------------------------------------------------------------------------>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+
+                    <p>
+                        <i class="fab fa-accusoft footer-logo"></i>
+                        &nbsp;&nbsp;
+                        <a href="./About.html"> About Us</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-address-book footer-logo"></i>
+                        <a href="./Contact.html"> Contact Us</a>
+                    </p>
+
+                    <p>
+                        <i class="fas fa-hand-holding-heart footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./Carrer.html"> Product</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-affiliatetheme footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="#"> Affiliate</a>
+                    </p>
+                </div>
+                <!-- footer col-3  section ------------------------------------------------------------------------------>
+                <div class="col-md-3">
+                    <h1>Follow Us</h1>
+
+                    <p>
+                        <i class="fab fa-youtube footer-logo"></i>
+                        <a href="https://www.youtube.com/">You Tube</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-facebook footer-logo"></i>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-linkedin footer-logo"></i>
+                        &nbsp;
+                        <a href="https://www.linkedin.com/feed/"> LinkedIn</a>
+                    </p>
+
+                    <p>
+                        <i class="fab fa-twitter-square footer-logo"></i>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="https://twitter.com/?lang=en">Twitter</a>
+                    </p>
+                </div>
+                <!-- footer col-4  section ------------------------------------------------------------------------------>
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <img src="./../image/footer-image.png" alt="">
+                </div>
+
+            </div>
+            <hr>
+            <h1 class="copyright"> <i class="fas fa-at"></i> &nbsp; Devloper | All Right Reserved</h1>
+        </div>
+    </section>
+    <!-- end footer  section -------------------------------------------------------------------------->
+
+<!-- script section  ------------------------------------------------------------------------->
+    <script src="./framwork/aos/aos.js"></script>
+  <script src="./../bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./framwork/glightbox/js/glightbox.min.js"></script>
+  <script src="./framwork/php-email-form/validate.js"></script>
+  <script src="./framwork/purecounter/purecounter.js"></script>
+  <script src="./framwork/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+      /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+  </script>
+</body>
+</html>

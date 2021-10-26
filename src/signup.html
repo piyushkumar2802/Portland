@@ -1,0 +1,164 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	 <!-- css file  --------------------------------------------------------------------------------------------->
+	 <link rel="stylesheet" href="./Style.css">
+
+	 <!--bootstrap min.css file  -------------------------------------------------------------------------------->
+	 <link rel="stylesheet" href="./../bootstrap-5.1.1-dist/css/bootstrap.min.css">
+ 
+	 <!-- bootstrap min.js file -------------------------------------------------------------------------------->
+	 <script src="./../bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+ 
+	 <!-- jquery file  ----------------------------------------------------------------------------------------->
+	 <script src="./../bootstrap-5.1.1-dist/jquery-3.6.0.min.js"></script>
+ 
+	 <!-- font awesome cdn  ------------------------------------------------------------------------------------->
+	 <link rel="stylesheet" href="./../bootstrap-5.1.1-dist/fontawesome-free-5.15.4-web/css/all.min.css">
+	<title>E-Commere/SignUp</title>
+	<style>
+		
+		/*add padding to containers*/
+		.container {
+			padding: 16px;
+			background-color: white;
+		}
+
+		/*full-width input fields*/
+		.container input[type=text],
+		input[type=password] {
+			width: 100%;
+			padding: 7px;
+			margin: 10px 0 22px 0;
+			display: inline-block;
+			border: none;
+			background: teal;
+			color: aquamarine;
+		}
+
+		input[type=text]:focus,
+		input[type=password]:focus {
+			background-color: aqua;
+			outline: none;
+		}
+
+		/*overwrite default styles of hr*/
+		hr {
+			border: 1px solid aquamarine;
+			margin-bottom: 25px;
+		}
+
+		/*set a style for the submit button */
+		.registerbtn {
+			background-color: #0e3b4f;
+			color: aquamarine;
+			font-size: 20px;
+			padding: 16px 20px;
+			margin: 50px 0 0 0;
+			border: none;
+			cursor: pointer;
+			border-radius: 1%;
+			width: 100%;
+			opacity: 0.9;
+		}
+
+		.registerbtn:hover {
+			opacity: 1;
+		}
+
+		/*add a blue text color to linkes*/
+		a {
+			color: orange;
+			text-decoration: none;
+		}
+
+		/*set a gray background color and center the text of the "sign in" section*/
+		.signin {
+			background-color: #0e3b4f;
+			text-align: center;
+			color: aqua;
+		}
+		.sign {
+			text-decoration: underline;
+			color: aquamarine !important;
+			font-size: medium;
+		}
+		.sign:hover{
+			color:orange !important;
+		}
+
+		.color-txt {
+			color: orange !important;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- top nvbar ---------------------------------------------------------------------------------------------->
+	<div class="top-nav-bar">
+		<div class="search-box">
+			<a href="./../index.html"><img src="image/portland.png" alt="" class="logo"></a>
+			<input type="text" class="form-control">
+			<span class="input-group-text"><i class="fas fa-search"></i></span>
+		</div>
+
+		<div class="menu-bar">
+			<ul>
+				<li>
+					<a href="./Cart.html"><i class="fas fa-shopping-basket nav-logo"></i>Cart</a>
+				</li>
+				<li>
+					<a href="#"><i class="fas fa-user-plus nav-logo"></i>SignUp</a>
+				</li>
+				<li>
+					<a href="./login.html"><i class="fas fa-sign-in-alt nav-logo"></i>Log In</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- end top navbar --------------------------------------------------------------------------------------------------->
+	
+	<form action="/action_page.php">
+		<div class="container">
+			<br>
+			<h1 class="color-txt">SIGN UP</h1>
+			<hr>
+			<table for="name"><b class="color-txt">NAME</b></table>
+			<input type="text" placeholder="Enter Your Full Name" name="name" id="name" required>
+
+			<table for="emali"><b class="color-txt">EMAIL</b></table>
+			<input type="text" placeholder="Enter Mail" name="email" id="email" required>
+
+			<table for="psw"><b class="color-txt">PASSWORD</b></table>
+			<input type="password" placeholder="Enter Password" name="psw" id="psw" required
+				pattern="(?=.*\d)(?=*[A-Z])(?=*[a-z]).{8}" title="must contain at least one number
+				  and one uppercase and one lowercase latter, and at least 9 or more charactor">
+
+
+			<table for="psw-repeat"><b class="color-txt">PASSWORD REPEAT</b></table>
+			<input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required
+				pattern="(?=.*\d)(?=*[A-Z])(?=*[a-z]).{8}" title="must contain at least one number
+				  and one uppercase and one lowercase latter, and at least 9 or more charactor">
+			<hr>
+
+			<input type="checkbox" id="check" name="check" value="cehcked" required>
+			<label for="check">I accept rhe <a href="./Terms-use.html">Terms of Use</a> & <a href="./Privacy-Policy.html">Privacy Policy</a></label><br>
+			<button type="submit" class="registerbtn">Sign Up</button><br>
+		</div>
+		
+	</form>
+
+
+    <!-- footer  section ------------------------------------------------------------------------------>
+    <section class="footer">
+            <div class="container signin">
+				<h5> Already have an account ? <a href="./login.html" class="Sign"> Sign In</a></h5>
+			</div>
+    </section>
+    <!-- end footer  section -------------------------------------------------------------------------->
+</body>
+
+</html>
